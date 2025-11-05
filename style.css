@@ -1,0 +1,126 @@
+/* 🌈 Background and Layout */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #74b9ff, #a29bfe);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* 📦 Main Container */
+.container {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  transition: 0.4s ease-in-out;
+}
+
+.container:hover {
+  transform: translateY(-5px);
+}
+
+/* 📝 Heading */
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* ➕ Input Section */
+.input-section {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+input:focus {
+  border-color: #5b6dfb;
+  box-shadow: 0 0 6px rgba(91, 109, 251, 0.5);
+}
+
+/* 🔘 Buttons */
+button {
+  background-color: #0984e3;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+button:hover {
+  background-color: #074f9d;
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* 📋 Task List */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+li {
+  background: #f9f9f9;
+  padding: 10px;
+  margin-top: 8px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: 0.2s ease-in-out;
+}
+
+li:hover {
+  transform: translateX(3px);
+}
+
+li.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/* 📊 Footer (inside card) */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+/* 💻 Footer (bottom of page) */
+footer {
+  text-align: center;
+  margin-top: 25px;
+  color: #444;
+  font-size: 0.9rem;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+footer p {
+  padding: 10px;
+}
+
+footer p:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
